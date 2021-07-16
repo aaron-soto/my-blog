@@ -54,7 +54,7 @@ export const SinglePost = () => {
 						<Markdown
 							options={{
 								overrides: {
-									marker: {
+									fancy: {
 										component: Fancy,
 									},
 									noteInform: {
