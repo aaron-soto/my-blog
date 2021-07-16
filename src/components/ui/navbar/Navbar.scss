@@ -1,0 +1,57 @@
+@import "../../../sassStyles/mixins";
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 65px;
+
+	@include for-phone-only {
+		margin-top: 50px !important;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	a {
+		color: currentColor;
+		text-decoration: none;
+	}
+
+	h2 {
+		margin: 0;
+		padding: 0;
+		line-height: 1em;
+		cursor: pointer;
+		color: #005ffe;
+
+		@include for-phone-only {
+			font-size: 36px;
+			font-weight: 800;
+			margin-bottom: 30px;
+		}
+	}
+
+	ul {
+		display: flex;
+		align-items: flex-end;
+		list-style: none;
+
+		a {
+			text-decoration: none;
+			color: currentColor;
+		}
+
+		li {
+			font-weight: 500;
+			line-height: 1em;
+			margin: 0 0.5rem;
+			cursor: pointer;
+
+			&:hover {
+				color: #5c2ae5;
+			}
+		}
+	}
+}

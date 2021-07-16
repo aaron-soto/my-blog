@@ -1,0 +1,63 @@
+.works-list {
+	margin-top: 77px !important;
+	width: 100%;
+}
+
+.work-item {
+	background-color: #f5f5f5;
+	padding: 50px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+
+	&__details {
+		width: 50%;
+	}
+
+	img {
+		width: 40%;
+		position: absolute;
+		right: 50px;
+		top: 50px;
+	}
+
+	&:first-of-type {
+		margin-top: 20px;
+	}
+
+	&:last-of-type {
+		margin-bottom: 200px;
+	}
+
+	&:not(:last-of-type) {
+		margin-bottom: 50px;
+	}
+
+	.number {
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
+
+	.title {
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+
+	.date {
+		font-size: 12px;
+		color: lighten(#2a2a40, 60%);
+		margin-bottom: 25px;
+	}
+	button {
+		background-color: #e52a55;
+		border: none;
+		border-radius: 5px;
+		padding: 8px 16px;
+		color: #fff;
+		cursor: pointer;
+	}
+}

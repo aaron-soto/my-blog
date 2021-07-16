@@ -1,0 +1,29 @@
+.snippet-list {
+	margin-top: 77px !important;
+	width: 100%;
+	min-height: 85vh;
+}
+
+.snippet-list-item {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 15px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #f5f5f5;
+	}
+
+	.title {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	.views {
+		font-size: 14px;
+		font-weight: 500;
+		color: lighten(#2a2a40, 60%);
+	}
+}

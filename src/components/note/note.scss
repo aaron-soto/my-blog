@@ -1,0 +1,70 @@
+.note {
+	padding: 20px;
+	border-radius: 5px;
+	position: relative;
+	margin: 5rem auto;
+
+	&:before {
+		content: "i";
+		height: 30px;
+		width: 30px;
+		background-color: #fff;
+		position: absolute;
+		font-weight: 600;
+		border-radius: 50%;
+		top: -25px;
+		left: -25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		box-shadow: 0 0 0 10px #fff;
+	}
+
+	&.inform {
+		$inform-color: #005ffe;
+		background-color: lighten($inform-color, 40%);
+		border-left: 3px solid $inform-color;
+
+		&:before {
+			border: 3px solid $inform-color;
+			color: $inform-color;
+		}
+
+		p,
+		span {
+			color: darken($inform-color, 20%);
+		}
+	}
+	&.warn {
+		$warn-color: #e52a55;
+		background-color: lighten($warn-color, 40%);
+		border-left: 3px solid $warn-color;
+
+		&:before {
+			border: 3px solid $warn-color;
+			color: $warn-color;
+		}
+
+		p,
+		span {
+			color: darken($warn-color, 20%);
+		}
+	}
+
+	span {
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	p {
+		font-size: 16px;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+			Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		font-weight: 600;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}

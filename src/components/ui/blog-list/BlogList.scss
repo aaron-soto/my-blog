@@ -1,0 +1,100 @@
+@import "../../../sassStyles/mixins";
+
+.blog-list {
+	margin-top: 77px !important;
+	width: 100%;
+
+	.post-list {
+		&:not(:last-of-type) {
+			margin-bottom: 77px;
+		}
+
+		&:last-of-type {
+			margin-bottom: 200px;
+		}
+	}
+}
+
+.all-posts,
+.most-popular {
+	a {
+		text-decoration: none;
+	}
+}
+
+.blog-list-item {
+	cursor: pointer;
+	margin-bottom: 30px;
+
+	&:hover {
+		.title {
+			color: #005ffe;
+		}
+	}
+
+	.title-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		.views {
+			font-size: 14px;
+			color: #5c5c69;
+
+			@include for-phone-only {
+				display: none;
+			}
+		}
+	}
+
+	.title {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 10px;
+		transition: all 200ms ease-out;
+
+		@include for-phone-only {
+			font-weight: 600;
+		}
+	}
+
+	.description {
+		font-size: 16px;
+		font-weight: 300;
+		color: #2a2a40;
+		margin-bottom: 10px;
+		@include for-phone-only {
+			font-size: 14px;
+		}
+	}
+
+	&:hover {
+		.button-wrapper {
+			ion-icon {
+				opacity: 1;
+				color: #005ffe;
+			}
+		}
+	}
+
+	.button-wrapper {
+		display: flex;
+		align-items: center;
+
+		p {
+			text-decoration: none;
+			color: #2a2a40;
+			font-weight: 500;
+			font-size: 16px;
+			margin-right: 1rem;
+		}
+
+		ion-icon {
+			font-size: 24px;
+			opacity: 0;
+			color: currentColor;
+			transition: all 200ms ease-out;
+		}
+	}
+}

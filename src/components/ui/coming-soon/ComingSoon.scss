@@ -1,0 +1,12 @@
+.coming-soon-section {
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	ion-icon {
+		font-size: 64px;
+		margin-bottom: 3rem;
+	}
+}
