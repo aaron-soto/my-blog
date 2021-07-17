@@ -10,7 +10,7 @@ export const WorkItem = () => {
 				<p className='date'>May 2021</p>
 				<button>details</button>
 			</div>
-			<img src={componentImg} alt='project image preview' />
+			<img src={componentImg} alt='project' />
 		</div>
 	);
 };

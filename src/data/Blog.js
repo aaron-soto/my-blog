@@ -1,5 +1,3 @@
-const BLOG_PATH = "../../../";
-
 export const blogs = [
 	{
 		title: "Create a React Blog",

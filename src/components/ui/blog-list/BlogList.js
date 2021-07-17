@@ -1,13 +1,9 @@
 import "./BlogList.scss";
 import { BlogListItem } from "./BlogListItem";
-import { useState, useEffect } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import { blogs } from "../../../data/Blog";
 
 export const BlogList = () => {
-	const [postsByViews, setPostsByViews] = useState(null);
-
 	return (
 		<section className='container blog-list'>
 			<h1 className='section-header'>Blog</h1>
