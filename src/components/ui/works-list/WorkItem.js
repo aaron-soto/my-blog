@@ -1,16 +1,18 @@
 import "./WorksList.scss";
 import componentImg from "../../../assets/componentScreen.png";
 
-export const WorkItem = () => {
-	return (
+export const WorkItem = ({ project }) => {
+	return project ? (
 		<div className='work-item'>
 			<div className='work-item__details'>
-				<p className='number'>01</p>
-				<h2 className='title'>React Hangman game w/ State managment</h2>
-				<p className='date'>May 2021</p>
+				<p className='number'>{project.index}</p>
+				<h2 className='title'>{project.title}</h2>
+				<p className='date'>{project.date}</p>
 				<button>details</button>
 			</div>
-			<img src={componentImg} alt='project' />
+			<img src={project.preview} alt='project' />
 		</div>
+	) : (
+		<p>Loading</p>
 	);
 };

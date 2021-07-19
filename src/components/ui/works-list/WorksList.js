@@ -1,5 +1,7 @@
 import { WorkItem } from "./WorkItem";
 import "./WorksList.scss";
+import { Works } from "../../../data/works/works";
+import { Link } from "react-router-dom";
 
 export const WorksList = () => {
 	return (
@@ -11,10 +13,14 @@ export const WorksList = () => {
 				in me freetime.
 			</p>
 
-			<WorkItem />
-			<WorkItem />
-			<WorkItem />
-			<WorkItem />
+			{Works &&
+				Works.map((project) => {
+					return (
+						<Link to={"/works/" + project.slug}>
+							<WorkItem project={project} />
+						</Link>
+					);
+				})}
 		</main>
 	);
 };

@@ -1,6 +1,11 @@
 .works-list {
 	margin-top: 77px !important;
 	width: 100%;
+
+	a {
+		text-decoration: none;
+		color: #2a2a40;
+	}
 }
 
 .work-item {
@@ -12,6 +17,7 @@
 	overflow: hidden;
 	position: relative;
 	cursor: pointer;
+	margin: 3rem 0 !important;
 
 	&__details {
 		width: 50%;
@@ -59,5 +65,14 @@
 		padding: 8px 16px;
 		color: #fff;
 		cursor: pointer;
+	}
+}
+
+.work-page {
+	margin-top: 77px !important;
+
+	img {
+		width: 100%;
+		margin: 2rem 0;
 	}
 }

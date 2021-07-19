@@ -1,0 +1,174 @@
+@import "../../../sassStyles/mixins.scss";
+
+.about-section {
+	margin-top: 77px !important;
+
+	@include for-phone-only {
+		overflow: hidden;
+	}
+
+	p {
+		margin-bottom: 2rem;
+
+		@include for-phone-only {
+			font-size: 16px !important;
+		}
+
+		a {
+			color: #712ae5;
+			text-decoration: none;
+		}
+	}
+}
+
+.timeline {
+	position: relative;
+	margin-bottom: 4rem;
+
+	.timeline-title {
+		margin: 1rem 0 3rem 0;
+	}
+
+	.bar {
+		@include for-phone-only {
+			left: 0;
+		}
+
+		width: 10px;
+		height: 80%;
+		background-color: #f5f6f9;
+		position: absolute;
+		top: 6rem;
+		left: 50%;
+		transform: translateX(-50%);
+		border-radius: 10px;
+	}
+
+	.item {
+		width: 100%;
+		padding: 1rem;
+		box-sizing: border-box;
+		position: relative;
+
+		.item-container {
+			@include for-phone-only {
+				width: 100%;
+			}
+			width: 45%;
+			background-color: #f3f4f6;
+			box-sizing: border-box;
+			padding: 1rem;
+			position: relative;
+			border-radius: 0 0 10px 10px;
+
+			.container-bar {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 3px;
+				background-color: #712ae5;
+			}
+
+			h3 {
+				font-size: 18px;
+				margin-bottom: 0.5rem;
+				@include for-phone-only {
+					margin-bottom: 2rem;
+				}
+			}
+
+			p {
+				font-size: 14px;
+				margin-bottom: 0;
+			}
+
+			.date {
+				color: rgba(#000, 0.25);
+				font-size: 14px;
+			}
+
+			&.left {
+				.date {
+					position: absolute;
+					right: -40%;
+
+					@include for-phone-only {
+						left: 1rem;
+						top: 2.5rem;
+					}
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					height: 10px;
+					width: 10px;
+					background-color: #712ae5;
+					outline: 5px solid #fff;
+					top: 25px;
+					right: -12.75%;
+					border-radius: 50%;
+					@include for-phone-only {
+						display: none;
+					}
+				}
+				&:before {
+					content: "";
+					position: absolute;
+					height: 20px;
+					width: 20px;
+					background-color: #f5f5f5;
+					top: 20px;
+					right: -10px;
+					transform: rotate(45deg);
+					@include for-phone-only {
+						left: -10px;
+					}
+				}
+			}
+
+			&.right {
+				margin-left: auto;
+
+				.date {
+					position: absolute;
+					left: -40%;
+
+					@include for-phone-only {
+						left: 1rem;
+						top: 2.5rem;
+					}
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					box-sizing: border-box;
+					height: 10px;
+					width: 10px;
+					background-color: #712ae5;
+					outline: 5px solid #fff;
+					top: 25px;
+					left: -12.75%;
+					border-radius: 50%;
+
+					@include for-phone-only {
+						display: none;
+					}
+				}
+
+				&:before {
+					content: "";
+					position: absolute;
+					height: 20px;
+					width: 20px;
+					background-color: #f5f5f5;
+					top: 20px;
+					left: -10px;
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+}
