@@ -75,7 +75,7 @@ export const SinglePost = () => {
 						</Markdown>
 					</div>
 				</div>
-				<NewsLetter />
+				{/* <NewsLetter /> */}
 			</>
 		)
 	);
