@@ -8,9 +8,17 @@ Like so many devs, I learned how to use styled-components, but without really un
 
 Knowing how it works is <fancy>helpful</fancy>. You don't need to understand how cars work in order to drive, but it sure as heck helps when your car breaks down on the side of the road.
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fac7f612d-e2dc-4a30-857a-909b9b01440c%2Ffirefox_stWvY.png?table=block&id=28d91a91-e2a1-4c41-91da-01c4456ae76e&spaceId=94bba81c-ea98-4c0a-93b8-4fc6247f87bb&width=2560&userId=b47323ed-bdb1-40fa-85fa-f24dc31db597&cache=v2)
 
 Debugging CSS is hard enough on its own without adding in a layer of tooling magic! By demystifying styled-components, we'll be able to diagnose and fix weird CSS issues with way less frustration.
+
+```
+npx create-react-app ./
+```
+
+```
+npm install node-sass react-router-dom
+```
 
 In this blog post, we'll pop the hood and learn how it works by building our own mini-clone of 💅 styled-components.
 
@@ -22,7 +30,7 @@ This article is written for _experienced React developers_. I assume knowledge a
 There's some pretty gnarly stuff in this one. I've done my best to simplify things, but there's no getting around it: this stuff is complicated.
 </noteWarn>
 
-styled-components comes with a collection of helper methods, each corresponding to a DOM node. There's h1, header, button, and dozens more (they even support SVG elements like line and path!).
+styled-components comes with a collection of helper methods, each corresponding to a DOM node. There's <inlineCode>h1</inlineCode>, <inlineCode>header</inlineCode>, <inlineCode>button</inlineCode>, and dozens more (they even support SVG elements like line and path!).
 
 ### Testing Headings
 
@@ -45,6 +53,11 @@ When we render the Title component, a few things happen:
 
 Somehow, using an obscure half-string-half-function syntax, the tool was able to take some arbitrary CSS and assign it to a React component, bypassing the CSS selectors we've always used.
 
+- We come up with a unique class name by hashing styles into a seemingly-random string, like dKamQW or iOacVe.
+- We run the CSS through Stylis, a <highlight>lightweight CSS preprocessor</highlight>.
+- We inject a new CSS class into the page, using that hashed string as its name, and containing all of the CSS declarations from the styles string.
+- We apply that class name to our returned HTML element
+
 <noteInform>
 <span>This is to warn the reader!</span>
 
@@ -55,7 +68,7 @@ There's some pretty gnarly stuff in this one. I've done my best to simplify thin
 
 Like so many devs, I learned how to use styled-components, but without really understanding what was going on under the hood.
 
-![Funny Dog](https://www.anadventurousworld.com/wp-content/uploads/2020/10/funny-quiz-questions-and-answers.jpg.webp)
+![Funny Dog](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F935fe865-8653-4790-ab35-ff86e3b847dd%2Ffirefox_EObrA.png?table=block&id=693de3ab-707d-4fe9-ab50-016def2e22e4&spaceId=94bba81c-ea98-4c0a-93b8-4fc6247f87bb&width=2560&userId=b47323ed-bdb1-40fa-85fa-f24dc31db597&cache=v2 "Slider Components")
 
 Knowing how it works is helpful. You don't need to understand how cars work in order to drive, but it sure as heck helps when your car breaks down on the side of the road.When I first started using styled-components, it seemed like magic ✨. Somehow, using an obscure half-string-half-function syntax, the tool was able to take some arbitrary CSS and assign it to a React component, bypassing the CSS selectors we've always used.
 

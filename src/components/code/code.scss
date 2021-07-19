@@ -1,9 +1,18 @@
+@import "../../sassStyles/mixins";
+
 pre {
 	width: 105%;
 	margin-left: -5%;
 	font-size: 16px;
 	margin-top: 3rem;
 	margin-bottom: 3rem;
+
+	@include for-phone-only {
+		font-size: 14px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	pre {
 		box-sizing: border-box;
@@ -12,9 +21,14 @@ pre {
 		font-weight: 600;
 		margin: 5rem auto;
 		position: relative;
+		box-sizing: border-box;
 		border-radius: 10px;
 		box-shadow: rgba(15, 26, 128, 0.055) 0px 10px 20px;
 		padding: 32px !important;
+
+		@include for-phone-only {
+			width: 100%;
+		}
 	}
 
 	code {

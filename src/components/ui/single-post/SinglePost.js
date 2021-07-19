@@ -8,6 +8,7 @@ import { Code, InlineCode } from "../../code";
 import { Fancy, Highlight } from "../../fancy-text";
 import { blogs } from "../../../data/Blog";
 import { NewsLetter } from "../newsletter/NewsLetter";
+import { BlogImg } from "../../blog-img/BlogImg";
 
 export const SinglePost = () => {
 	const [currentPost, setCurrentPost] = useState(null);
