@@ -9,7 +9,7 @@ This tutorial is based off the fact that you already have a package manager inst
 
 well get started by using facebooks <inlineCode>create-react-app</inlineCode>. I find it easy to use this to get all of the grunt work out of the way and then alter what is given to us when its done.
 
-![initial folder](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fbefe76be-cee5-4076-9700-857d2dffb855%2Fexplorer_JFjmg.png?table=block&id=5a63f0fa-f1ff-4cdc-a480-e159590c94ed&spaceId=94bba81c-ea98-4c0a-93b8-4fc6247f87bb&width=2560&userId=b47323ed-bdb1-40fa-85fa-f24dc31db597&cache=v2)
+![initial folder](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc65846a1-7d33-4ee4-bd54-76085d17169f%2Fexplorer_JFjmg.png?table=block&id=44cfa4e2-5c52-4890-a86f-130207ace108&spaceId=94bba81c-ea98-4c0a-93b8-4fc6247f87bb&width=2560&userId=b47323ed-bdb1-40fa-85fa-f24dc31db597&cache=v2)
 
 Create a folder in the directory of your choice and name that folder what you want your app name to be. Open that folder in vscode. I like to right click the folder or inside the folder and click <inlineCode>Open with Code</inlineCode>.
 
@@ -21,7 +21,7 @@ npx create-react-app ./
 
 running <inlineCode>create-react-app</inlineCode> with <inlineCode>./</inlineCode> creates the app in the current folder using the name you gave the folder. Just like any react video you have watched before, Ill see you back here when its done installing the app!
 
-![react app created](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F998cc233-13bb-4604-ad3e-64260c573b8b%2FCode_hZEOM.png?table=block&id=afb86fcc-bf0d-4a2f-8427-0d13a6c54011&spaceId=94bba81c-ea98-4c0a-93b8-4fc6247f87bb&width=2560&userId=b47323ed-bdb1-40fa-85fa-f24dc31db597&cache=v2)
+![react app created](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F77168dd2-3fa0-473c-b4d9-ba9c07ee4d99%2FCode_hZEOM.png?table=block&id=e56ef7ff-f702-4708-887a-ac3678915e3f&spaceId=94bba81c-ea98-4c0a-93b8-4fc6247f87bb&width=2560&userId=b47323ed-bdb1-40fa-85fa-f24dc31db597&cache=v2)
 
 Above is what you should have once it is done installing. I like to go ahead and at this point strip this folder structure down to its bare bones.
 
@@ -113,7 +113,7 @@ npm start
 
 Running <inlineCode>npm start</inlineCode> should give you the following application.
 
-![completed app](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb66e4f64-6444-4cd5-a4d5-b6be7931164b%2Ffirefox_opcPn.png?table=block&id=225dfdeb-4608-4c2d-9ed9-0c53c59f2d81&spaceId=94bba81c-ea98-4c0a-93b8-4fc6247f87bb&width=2560&userId=b47323ed-bdb1-40fa-85fa-f24dc31db597&cache=v2)
+![completed app](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa721fbb1-9fbc-45bf-9f49-d75a2e9eab97%2Ffirefox_opcPn.png?table=block&id=10938851-d1b6-4068-b5a1-f856ad105ed8&spaceId=94bba81c-ea98-4c0a-93b8-4fc6247f87bb&width=2560&userId=b47323ed-bdb1-40fa-85fa-f24dc31db597&cache=v2)
 
 ## That's it!
 
