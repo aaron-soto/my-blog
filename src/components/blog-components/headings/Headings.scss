@@ -1,0 +1,23 @@
+.heading-link {
+	position: relative;
+	transition: all 0.2s ease-out;
+
+	&:before {
+		position: absolute;
+		content: "🔗";
+		top: 0;
+		left: -3rem;
+		opacity: 0;
+	}
+
+	a {
+		color: #282828;
+		text-decoration: none;
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+}
