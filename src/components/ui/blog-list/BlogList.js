@@ -2,7 +2,7 @@ import "./BlogList.scss";
 import { BlogListItem } from "./BlogListItem";
 import { Link } from "react-router-dom";
 import { blogs } from "../../../data/Blog";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export const BlogList = () => {
 	const [activeFilter, setActiveFilter] = useState("All");

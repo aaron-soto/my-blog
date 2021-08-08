@@ -14,7 +14,7 @@ export const BlogImg = ({ src, alt }) => {
 			<>
 				<img onClick={handleClick} src={src} alt={alt} />
 				<div className='img-wrapper' onClick={handleClick}>
-					<img onClick={handleClick} src={src} />
+					<img onClick={handleClick} src={src} alt={alt} />
 				</div>
 			</>
 		);

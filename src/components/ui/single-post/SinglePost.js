@@ -7,8 +7,6 @@ import { Helmet } from "react-helmet";
 import { Code, InlineCode } from "../../code";
 import { Fancy, Highlight } from "../../fancy-text";
 import { blogs } from "../../../data/Blog";
-import { NewsLetter } from "../newsletter/NewsLetter";
-import { BlogImg } from "../../blog-img/BlogImg";
 import { Heading2 } from "../../blog-components/headings/Heading2";
 
 export const SinglePost = () => {

@@ -4,13 +4,10 @@ import { BrowserRouter } from "react-router-dom";
 import { Footer } from "./components/ui/footer/Footer";
 import { Navbar } from "./components/ui/navbar/Navbar";
 import { SinglePost } from "./components/ui/single-post/SinglePost";
-import { SnippetList } from "./components/ui/snippets-list/SnippetList";
-import { WorksList } from "./components/ui/works-list/WorksList";
 import { ComingSoon } from "./components/ui/coming-soon/ComingSoon";
 import RouteChangeTracker from "./data/RouteChangeTracker";
 import { createBrowserHistory } from "history";
 import ReactGA from "react-ga";
-import { WorkPage } from "./components/ui/works-list/WorkPage";
 import { About } from "./components/ui/about/About";
 
 const history = createBrowserHistory();

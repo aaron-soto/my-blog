@@ -1,5 +1,4 @@
 import "./WorksList.scss";
-import componentImg from "../../../assets/componentScreen.png";
 
 export const WorkItem = ({ project }) => {
 	return project ? (

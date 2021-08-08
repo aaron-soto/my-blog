@@ -19,7 +19,7 @@ export const About = () => {
 			</p>
 			<p>
 				I currently work as a Developer Consultant For{" "}
-				<a href='https://allata.com/' target='_blank'>
+				<a href='https://allata.com/' target='blank'>
 					Allata
 				</a>{" "}
 				where I help design and construct websites/apps for clients to their

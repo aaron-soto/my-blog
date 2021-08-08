@@ -43,8 +43,10 @@ export const Timeline = () => {
 					<h3 className='title'>Graduated Coding Dojo</h3>
 					<p className='description'>
 						Over 1000 hours of coding and I graduated{" "}
-						<a href='https://www.codingdojo.com/'>Coding Dojo</a> with all three
-						blackbelts
+						<a href='https://www.codingdojo.com/' target='blank'>
+							Coding Dojo
+						</a>{" "}
+						with all three blackbelts
 					</p>
 				</div>
 			</div>
@@ -56,7 +58,7 @@ export const Timeline = () => {
 					<p className='description'>
 						After many applications being rejected I got my first job as a
 						developer, Consulting for{" "}
-						<a href='https://allata.com/' target='_blank'>
+						<a href='https://allata.com/' target='blank'>
 							Allata
 						</a>
 						.
