@@ -41,6 +41,11 @@ export const SinglePost = () => {
 						<h2>{currentPost.title}</h2>
 						<p>{currentPost.date}</p>
 					</div>
+					<div className='categories'>
+						{currentPost.categories.map((category) => {
+							return <span className='category'>{category}</span>;
+						})}
+					</div>
 					<div className='md-wrapper'>
 						<Markdown
 							options={{

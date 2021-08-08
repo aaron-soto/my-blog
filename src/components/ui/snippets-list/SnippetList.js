@@ -1,5 +1,6 @@
 import "./SnippetList.scss";
 import { SnippetListItem } from "./SnippetListItem";
+import { Snippets } from "../../../data/snippets/Snippets";
 
 export const SnippetList = () => {
 	return (
@@ -17,9 +18,9 @@ export const SnippetList = () => {
 				</div>
 			</div>
 
-			<SnippetListItem />
-			<SnippetListItem />
-			<SnippetListItem />
+			{Snippets.map((snippet) => {
+				return <SnippetListItem snippet={snippet} />;
+			})}
 		</div>
 	);
 };

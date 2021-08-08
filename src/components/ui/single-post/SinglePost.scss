@@ -13,6 +13,26 @@
 			flex-direction: column;
 		}
 	}
+
+	.categories {
+		margin: 1rem 0 2rem 0;
+		.category {
+			padding: 0.5em 1em;
+			background-color: #f8f8f8;
+			border-radius: 10px;
+			margin: 0.5em;
+			cursor: pointer;
+			color: #6e6e8d;
+			font-size: 14px;
+			&:hover {
+				background-color: #f3f3f3;
+			}
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+		}
+	}
 }
 
 .md-wrapper {

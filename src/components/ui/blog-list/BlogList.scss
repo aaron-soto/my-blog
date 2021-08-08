@@ -4,6 +4,37 @@
 	margin-top: 77px !important;
 	width: 100%;
 
+	.blog-filters {
+		display: flex;
+		flex-wrap: wrap;
+		.category {
+			border-radius: 10px;
+			background-color: #f7f7f7;
+			font-size: 12px;
+			padding: 0.5em 1em;
+			margin: 0.2em 0.5em;
+			cursor: pointer;
+			font-weight: 600;
+
+			&.active {
+				background-color: #005dfe3b;
+				cursor: default;
+
+				&:hover {
+					background-color: #005dfe3b;
+				}
+			}
+
+			&:hover {
+				background-color: #f0f0f0;
+			}
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+		}
+	}
+
 	.post-list {
 		&:not(:last-of-type) {
 			margin-bottom: 77px;
