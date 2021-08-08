@@ -31,7 +31,7 @@ export const BlogList = () => {
 				here!
 			</p>
 
-			<h3>Filter Posts</h3>
+			<h3 className='filterTitle'>Filter Posts</h3>
 			{allCategories && (
 				<div className='blog-filters'>
 					<span

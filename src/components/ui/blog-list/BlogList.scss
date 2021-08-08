@@ -4,6 +4,10 @@
 	margin-top: 77px !important;
 	width: 100%;
 
+	.filterTitle {
+		margin-top: 2rem;
+	}
+
 	.blog-filters {
 		display: flex;
 		flex-wrap: wrap;
@@ -48,7 +52,7 @@
 
 .all-posts,
 .most-popular {
-	margin-top: 3rem;
+	margin-top: 1.5rem;
 
 	a {
 		text-decoration: none;
