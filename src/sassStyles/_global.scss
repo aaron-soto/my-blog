@@ -12,6 +12,11 @@ html {
 	font-size: 18px;
 	line-height: 1.7;
 	color: #2a2a40;
+
+	@media (prefers-color-scheme: dark) {
+		background-color: #1f1f1f;
+		color: #fff;
+	}
 }
 
 .container {

@@ -20,6 +20,9 @@ export const Navbar = () => {
 				<li>
 					<Link to='/about'>about</Link>
 				</li>
+				<li className='darkModeBtn'>
+					<ion-icon name='moon'></ion-icon>
+				</li>
 			</ul>
 		</div>
 	);
