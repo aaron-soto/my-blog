@@ -1,4 +1,5 @@
 @import "../../../sassStyles/mixins";
+@import "../../../sassStyles/variables";
 
 .blog-list {
 	margin-top: 77px !important;
@@ -14,7 +15,7 @@
 		flex-wrap: wrap;
 		.category {
 			border-radius: 10px;
-			background-color: #f7f7f7;
+			background-color: $bg-color-secondary;
 			font-size: 12px;
 			padding: 0.5em 1em;
 			margin: 0.3em 0.5em 0.3em 0;
@@ -22,16 +23,16 @@
 			font-weight: 600;
 
 			&.active {
-				background-color: #9cec5bb9;
+				background-color: $primary-green;
 				cursor: default;
 
 				&:hover {
-					background-color: #9cec5bb9;
+					background-color: $primary-green;
 				}
 			}
 
 			&:hover {
-				background-color: #f0f0f0;
+				background-color: $bg-hover;
 			}
 
 			&:first-of-type {
@@ -66,7 +67,7 @@
 
 	&:hover {
 		.title {
-			color: #005ffe;
+			color: $primary-blue;
 		}
 	}
 
@@ -111,7 +112,7 @@
 		.button-wrapper {
 			ion-icon {
 				opacity: 1;
-				color: #005ffe;
+				color: $primary-blue;
 			}
 		}
 	}
@@ -122,7 +123,7 @@
 
 		p {
 			text-decoration: none;
-			color: #2a2a40;
+			color: $text-color;
 			font-weight: 500;
 			font-size: 16px;
 			margin-right: 1rem;
