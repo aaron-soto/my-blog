@@ -1,4 +1,5 @@
 @import "./mixins";
+@import "./variables";
 
 * {
 	margin: 0;
@@ -11,12 +12,8 @@ html {
 	font-family: "Rubik", sans-serif;
 	font-size: 18px;
 	line-height: 1.7;
-	color: #2a2a40;
-
-	@media (prefers-color-scheme: dark) {
-		background-color: #1f1f1f;
-		color: #fff;
-	}
+	background-color: $bg-color;
+	color: $text-color;
 }
 
 .container {
@@ -32,7 +29,7 @@ html {
 .section-header,
 .sub-section-header,
 h3 {
-	color: #2a2a40;
+	color: $text-color;
 }
 
 .section-header {
@@ -98,9 +95,9 @@ h3 {
 	position: fixed;
 	bottom: 2rem;
 	right: 1rem;
-	background-color: #e52a55;
+	background-color: $primary-red;
 	cursor: pointer;
-	color: #ffffff;
+	color: $bg-color;
 	padding: 0.5em;
 	line-height: 14px;
 	font-size: 14px;
