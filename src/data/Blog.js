@@ -5,6 +5,8 @@ export const blogs = [
 		date: "July 19, 2021",
 		categories: ["JavaScript", "React", "Frontend"],
 		path: `2021/2021-07-19-easily-create-a-react-app/easily-create-a-react-app.md`,
+		recommend: "Why You Should Go To A Coding Bootcamp",
+		recommendSlug: "why-you-should-go-to-a-coding-bootcamp",
 		description:
 			"Everyone has their own boilerplate that they like to work with when creating a react app. I show you how I go about starting any react app with the inital setup.",
 	},
@@ -14,6 +16,8 @@ export const blogs = [
 		date: "August 08, 2021",
 		categories: ["Career", "Bootcamp", "Personal Growth"],
 		path: `2021/2021-08-08-why-you-should-go-to-a-coding-bootcamp/why-you-should-go-to-a-coding-bootcamp.md`,
+		recommend: "Easily Create a React App",
+		recommendSlug: "easily-create-a-react-app",
 		description:
 			"I get asked alot if attending the coding bootcamp that I did was worth it, I would like to tell you why I enjoyed it and how I benefited from it and how you will too.",
 	},

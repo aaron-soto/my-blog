@@ -9,6 +9,7 @@
 	}
 
 	.blog-filters {
+		@include no-select;
 		display: flex;
 		flex-wrap: wrap;
 		.category {
@@ -21,11 +22,11 @@
 			font-weight: 600;
 
 			&.active {
-				background-color: #005dfe3b;
+				background-color: #9cec5bb9;
 				cursor: default;
 
 				&:hover {
-					background-color: #005dfe3b;
+					background-color: #9cec5bb9;
 				}
 			}
 

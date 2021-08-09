@@ -1,5 +1,6 @@
 import "./About.scss";
 import { Timeline } from "./Timeline";
+import pdf from "../../../assets/AaronSotoResume.pdf";
 
 export const About = () => {
 	return (
@@ -24,6 +25,13 @@ export const About = () => {
 				</a>{" "}
 				where I help design and construct websites/apps for clients to their
 				liking.
+			</p>
+			<p>
+				Download my resume{" "}
+				<a href='../../../assets/AaronSotoResume.pdf' download>
+					here
+				</a>
+				.
 			</p>
 			<Timeline />
 		</div>

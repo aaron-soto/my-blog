@@ -1,6 +1,6 @@
 import "./SinglePost.scss";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Markdown from "markdown-to-jsx";
 import { Note } from "../../note/Note";
 import { Helmet } from "react-helmet";
@@ -83,6 +83,12 @@ export const SinglePost = () => {
 					</div>
 				</div>
 				{/* <NewsLetter /> */}
+				<div className='container recommended'>
+					<Link to={`/blog/${currentPost.recommendSlug}`}>
+						<p>Next Article</p>
+						<p>{currentPost.recommend}</p>
+					</Link>
+				</div>
 			</>
 		)
 	);

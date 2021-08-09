@@ -27,8 +27,8 @@ export const BlogList = () => {
 			<p className='section-description'>
 				I write when I have some free time in the hopes to help people learn fun
 				and creative ways to solve problems. I’ve written {blogs?.length}{" "}
-				articles on this site. I hope you find something useful while you are
-				here!
+				articles on this site with more to come. I hope you find something
+				useful while you are here!
 			</p>
 
 			<h3 className='filterTitle'>Filter Posts</h3>
@@ -55,7 +55,9 @@ export const BlogList = () => {
 				</div>
 			)}
 			<div className='post-list all-posts'>
-				<h2 className='sub-section-header'>'{activeFilter}' Posts</h2>
+				<h2 className='sub-section-header'>
+					{activeFilter === "All" ? "All" : `'${activeFilter}'`} Posts
+				</h2>
 
 				{activeFilter === "All"
 					? blogs.map((post) => (
