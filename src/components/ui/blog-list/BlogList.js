@@ -1,11 +1,13 @@
 import "./BlogList.scss";
 import { BlogListItem } from "./BlogListItem";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { blogs } from "../../../data/Blog";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const BlogList = () => {
 	const [activeFilter, setActiveFilter] = useState("All");
+
+	let history = useHistory();
 
 	const allCategories = [];
 
@@ -36,7 +38,10 @@ export const BlogList = () => {
 				<div className='blog-filters'>
 					<span
 						className={`category ${activeFilter === "All" ? "active" : ""}`}
-						onClick={(e) => setActiveFilter("All")}
+						onClick={(e) => {
+							setActiveFilter("All");
+							history.push(`/blog`);
+						}}
 					>
 						All
 					</span>
@@ -46,7 +51,10 @@ export const BlogList = () => {
 								className={`category ${
 									activeFilter === `${category}` ? "active" : ""
 								}`}
-								onClick={(e) => setActiveFilter(`${category}`)}
+								onClick={(e) => {
+									setActiveFilter(`${category}`);
+									history.push(`/blog/?category=${category}`);
+								}}
 							>
 								{category}
 							</span>

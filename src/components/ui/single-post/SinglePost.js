@@ -86,7 +86,9 @@ export const SinglePost = () => {
 				{/* <NewsLetter /> */}
 				<div className='container recommended'>
 					<Link to={`/blog/${currentPost.recommendSlug}`}>
-						<p>Next Article</p>
+						<p>
+							Next Article <ion-icon name='chevron-forward-outline'></ion-icon>
+						</p>
 						<p>{currentPost.recommend}</p>
 					</Link>
 				</div>
