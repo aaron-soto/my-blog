@@ -8,6 +8,7 @@ import { Code, InlineCode } from "../../code";
 import { Fancy, Highlight } from "../../fancy-text";
 import { blogs } from "../../../data/Blog";
 import { Heading2 } from "../../blog-components/headings/Heading2";
+import { ScrollToTop } from "../../../helpers/ScrollToTop";
 
 export const SinglePost = () => {
 	const [currentPost, setCurrentPost] = useState(null);
@@ -89,6 +90,7 @@ export const SinglePost = () => {
 						<p>{currentPost.recommend}</p>
 					</Link>
 				</div>
+				<ScrollToTop />
 			</>
 		)
 	);
