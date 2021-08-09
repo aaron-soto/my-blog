@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import { BlogList } from "./components/ui/blog-list/BlogList";
-import { BrowserRouter } from "react-router-dom";
+import { Router } from "react-router-dom";
 import { Footer } from "./components/ui/footer/Footer";
 import { Navbar } from "./components/ui/navbar/Navbar";
 import { SinglePost } from "./components/ui/single-post/SinglePost";
@@ -23,7 +23,7 @@ history.listen((location, action) => {
 
 function App() {
 	return (
-		<BrowserRouter history={history}>
+		<Router history={history}>
 			<Navbar />
 			<RouteChangeTracker />
 			<ScrollOnTransition>
@@ -40,7 +40,7 @@ function App() {
 				</Switch>
 			</ScrollOnTransition>
 			<Footer />
-		</BrowserRouter>
+		</Router>
 	);
 }
 

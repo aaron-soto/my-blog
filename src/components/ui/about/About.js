@@ -1,6 +1,5 @@
 import "./About.scss";
 import { Timeline } from "./Timeline";
-import pdf from "../../../assets/AaronSotoResume.pdf";
 
 export const About = () => {
 	return (

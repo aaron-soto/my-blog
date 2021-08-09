@@ -2,7 +2,7 @@ import "./BlogList.scss";
 import { BlogListItem } from "./BlogListItem";
 import { Link, useHistory } from "react-router-dom";
 import { blogs } from "../../../data/Blog";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export const BlogList = () => {
 	const [activeFilter, setActiveFilter] = useState("All");
@@ -45,9 +45,10 @@ export const BlogList = () => {
 					>
 						All
 					</span>
-					{allCategories.map((category) => {
+					{allCategories.map((category, idx) => {
 						return (
 							<span
+								key={idx}
 								className={`category ${
 									activeFilter === `${category}` ? "active" : ""
 								}`}
@@ -68,8 +69,8 @@ export const BlogList = () => {
 				</h2>
 
 				{activeFilter === "All"
-					? blogs.map((post) => (
-							<Link to={"/blog/" + post.slug}>
+					? blogs.map((post, idx) => (
+							<Link to={"/blog/" + post.slug} key={idx}>
 								<BlogListItem
 									title={post.title}
 									description={post.description}
@@ -80,9 +81,9 @@ export const BlogList = () => {
 							.filter((blog) => {
 								return blog.categories.includes(`${activeFilter}`);
 							})
-							.map((post) => {
+							.map((post, idx) => {
 								return (
-									<Link to={"/blog/" + post.slug}>
+									<Link key={idx} to={"/blog/" + post.slug}>
 										<BlogListItem
 											title={post.title}
 											description={post.description}
