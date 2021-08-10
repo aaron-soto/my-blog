@@ -8,7 +8,7 @@
 	height: 65px;
 
 	@include for-phone-only {
-		margin-top: 50px !important;
+		padding-top: 50px !important;
 		height: auto;
 		justify-content: center;
 		align-items: center;
