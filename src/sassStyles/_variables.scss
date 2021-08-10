@@ -7,13 +7,13 @@ $primary-purple: #5c2ae5;
 $primary-blue: #005ffe;
 $primary-green: #b7f188;
 
-// @media (prefers-color-scheme: dark) {
-// 	$bg-color: #1f1f1f;
-// 	$bg-color: #1d1d1d;
-// 	$bg-hover: #272727;
-// 	$text-color: #ffffff;
-// 	$primary-red: #e52a55;
-// 	$primary-purple: #5c2ae5;
-// 	$primary-blue: #005ffe;
-// 	$primary-green: #b7f188;
-// }
+@media (prefers-color-scheme: dark) {
+	$bg-color: #1f1f1f;
+	$bg-color: #1d1d1d;
+	$bg-hover: #272727;
+	$text-color: #ffffff;
+	$primary-red: #e52a55;
+	$primary-purple: #5c2ae5;
+	$primary-blue: #005ffe;
+	$primary-green: #b7f188;
+}
