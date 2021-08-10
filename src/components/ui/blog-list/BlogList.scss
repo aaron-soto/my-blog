@@ -5,6 +5,40 @@
 	margin-top: 77px !important;
 	width: 100%;
 
+	&.darkMode {
+		.blog-filters {
+			.category {
+				background-color: $bg-color-secondary-dark;
+				&:hover {
+					background-color: $bg-hover-dark;
+				}
+
+				&.active {
+					background-color: $primary-green-dark;
+					&:hover {
+						background-color: $primary-green-dark;
+					}
+				}
+			}
+		}
+		.title-wrapper {
+			h3 {
+				color: $text-color-dark;
+			}
+		}
+		.description {
+			color: $text-color-dark;
+		}
+		.button-wrapper {
+			p {
+				color: $text-color-dark;
+			}
+			.hydrated {
+				color: $text-color-dark;
+			}
+		}
+	}
+
 	.filterTitle {
 		margin-top: 2rem;
 	}

@@ -7,13 +7,11 @@ $primary-purple: #5c2ae5;
 $primary-blue: #005ffe;
 $primary-green: #b7f188;
 
-// @media (prefers-color-scheme: dark) {
-// 	$bg-color: #1f1f1f;
-// 	$bg-color: #1d1d1d;
-// 	$bg-hover: #272727;
-// 	$text-color: #ffffff;
-// 	$primary-red: #e52a55;
-// 	$primary-purple: #5c2ae5;
-// 	$primary-blue: #005ffe;
-// 	$primary-green: #b7f188;
-// }
+$bg-color-dark: #1f1f1f;
+$bg-color-secondary-dark: #272727;
+$bg-hover-dark: #2e2e2e;
+$text-color-dark: #ffffff;
+$primary-red-dark: #e52a55;
+$primary-purple-dark: #5c2ae5;
+$primary-blue-dark: #005ffe;
+$primary-green-dark: #73a34c;

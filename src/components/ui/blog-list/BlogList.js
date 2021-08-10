@@ -2,10 +2,14 @@ import "./BlogList.scss";
 import { BlogListItem } from "./BlogListItem";
 import { Link, useHistory } from "react-router-dom";
 import { blogs } from "../../../data/Blog";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { DarkModeContext } from "../../../helpers/DarkModeStore";
 
 export const BlogList = () => {
 	const [activeFilter, setActiveFilter] = useState("All");
+	const { darkMode } = useContext(DarkModeContext);
+
+	const [darkModeState, setDarkModeState] = darkMode;
 
 	let history = useHistory();
 
@@ -24,7 +28,9 @@ export const BlogList = () => {
 	}
 
 	return (
-		<section className='container blog-list'>
+		<section
+			className={`container blog-list ${darkModeState ? "darkMode" : ""}`}
+		>
 			<h1 className='section-header'>Blog</h1>
 			<p className='section-description'>
 				I write when I have some free time in the hopes to help people learn fun

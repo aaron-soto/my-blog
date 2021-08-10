@@ -1,5 +1,5 @@
 import "./SinglePost.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import Markdown from "markdown-to-jsx";
 import { Note } from "../../note/Note";
@@ -9,8 +9,12 @@ import { Fancy, Highlight } from "../../fancy-text";
 import { blogs } from "../../../data/Blog";
 import { Heading2 } from "../../blog-components/headings/Heading2";
 import { ScrollToTop } from "../../../helpers/ScrollToTop";
+import { DarkModeContext } from "../../../helpers/DarkModeStore";
 
 export const SinglePost = () => {
+	const { darkMode } = useContext(DarkModeContext);
+
+	const [darkModeState, setDarkModeState] = darkMode;
 	const [currentPost, setCurrentPost] = useState(null);
 	const [markdown, setMarkdown] = useState("");
 	const { slug } = useParams();
@@ -35,7 +39,9 @@ export const SinglePost = () => {
 				<Helmet>
 					<title>{currentPost.title}</title>
 				</Helmet>
-				<div className='container blog-page'>
+				<div
+					className={`container blog-page ${darkModeState ? "darkMode" : ""}`}
+				>
 					<div className='blog-details'>
 						<h2>{currentPost.title}</h2>
 						<p>{currentPost.date}</p>

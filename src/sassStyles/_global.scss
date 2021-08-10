@@ -14,6 +14,19 @@ html {
 	line-height: 1.7;
 	background-color: $bg-color;
 	color: $text-color;
+	min-height: 100vh;
+}
+
+body {
+	&.darkMode {
+		background-color: $bg-color-dark;
+		color: $text-color-dark;
+
+		.section-header,
+		.sub-section-header {
+			color: $text-color-dark;
+		}
+	}
 }
 
 .container {

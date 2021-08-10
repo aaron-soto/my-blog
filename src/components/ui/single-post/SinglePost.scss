@@ -1,7 +1,69 @@
 @import "../../../sassStyles/mixins";
+@import "../../../sassStyles/variables";
 
 .blog-page {
 	margin-top: 77px !important;
+
+	&.darkMode {
+		.categories {
+			.category {
+				background-color: $bg-color-secondary-dark;
+				&:hover {
+					background-color: $bg-hover-dark;
+				}
+			}
+		}
+
+		.md-wrapper {
+			p {
+				color: $text-color-dark;
+			}
+
+			.heading-link {
+				a {
+					color: $text-color-dark;
+				}
+			}
+		}
+
+		.note {
+			&:before {
+				background-color: $bg-color-dark;
+				box-shadow: 0 0 0 10px $bg-color-dark;
+			}
+
+			&.inform {
+				$inform-color: #005ffe;
+				background-color: darken($inform-color, 40%);
+				border-left: 3px solid $inform-color;
+
+				&:before {
+					border: 3px solid $inform-color;
+					color: $inform-color;
+				}
+
+				p,
+				span {
+					color: darken($inform-color, 20%);
+				}
+			}
+			&.warn {
+				$warn-color: #e52a55;
+				background-color: darken($warn-color, 40%);
+				border-left: 3px solid $warn-color;
+
+				&:before {
+					border: 3px solid $warn-color;
+					color: $warn-color;
+				}
+
+				p,
+				span {
+					color: darken($warn-color, 20%);
+				}
+			}
+		}
+	}
 
 	.blog-details {
 		display: flex;
@@ -22,14 +84,14 @@
 
 		.category {
 			padding: 0.5em 1em;
-			background-color: #f8f8f8;
+			background-color: $bg-color-secondary;
 			border-radius: 10px;
 			margin: 0.5em;
 			cursor: pointer;
 			color: #6e6e8d;
 			font-size: 14px;
 			&:hover {
-				background-color: #f3f3f3;
+				background-color: $bg-hover;
 			}
 
 			&:first-of-type {

@@ -15,6 +15,16 @@
 		flex-direction: column;
 	}
 
+	&.darkMode {
+		ul > li {
+			&.darkModeBtn {
+				&:hover {
+					background-color: $bg-hover-dark;
+				}
+			}
+		}
+	}
+
 	a {
 		color: currentColor;
 		text-decoration: none;
