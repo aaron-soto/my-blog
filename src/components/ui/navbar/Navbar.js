@@ -11,7 +11,29 @@ export const Navbar = () => {
 	const toggleDarkMode = () => {
 		setDarkModeState(!darkModeState);
 		document.body.classList.toggle("darkMode");
+
+		if (localStorage.getItem("darkMode") === "true") {
+			localStorage.setItem("darkMode", false);
+		} else {
+			localStorage.setItem("darkMode", true);
+		}
 	};
+
+	useEffect(() => {
+		let isDark = localStorage.getItem("darkMode");
+		console.log(isDark);
+		if (isDark === null) {
+			setDarkModeState(false);
+			localStorage.setItem("darkMode", false);
+			document.body.classList.remove("darkMode");
+		} else if (isDark === "true") {
+			setDarkModeState(true);
+			document.body.classList.add("darkMode");
+		} else if (isDark === "false") {
+			setDarkModeState(false);
+			document.body.classList.remove("darkMode");
+		}
+	}, []);
 
 	return (
 		<div className={`navbar container ${darkModeState ? "darkMode" : ""}`}>
