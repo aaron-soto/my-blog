@@ -10,6 +10,7 @@ pre {
 	@include for-phone-only {
 		font-size: 14px;
 		width: 100vw;
+		border-radius: 0;
 
 		pre {
 			border-radius: 0;
