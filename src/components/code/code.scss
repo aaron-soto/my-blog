@@ -9,9 +9,11 @@ pre {
 
 	@include for-phone-only {
 		font-size: 14px;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
+		width: 100vw;
+
+		pre {
+			border-radius: 0;
+		}
 	}
 
 	pre {
